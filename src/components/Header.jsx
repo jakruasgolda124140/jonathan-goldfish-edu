@@ -19,7 +19,7 @@ function Header() {
           <img src="/Jonathan Goldfish.jpg" style={styles.heroLogo} />
          {/* RIGHT: TEXT */}
           <div style={styles.textBlock}>
-            <div style={styles.titleRow}>
+            <div style={styles.title}>
               {"WELCOME".split("").map((letter, index) => (
                 <span key={index} style={styles.letter}>{letter}</span>
               ))}
@@ -91,17 +91,21 @@ const styles = {
         gap: "18px",
     },
 
-    titleRow: {
+    title: {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         gap: "20px",
         fontFamily: '"Anton", sans-serif',
-        fontSize: "clamp(60px, 10vw, 140px)", // Responsive font size
+        fontSize: "clamp(64px, 10vw, 140px)", // Responsive font size
         letterSpacing: "clamp(6px, 1.5vw, 12px)", // Responsive letter spacing
-        color:"#fff",
+        color:"#ffcc00",
         textTransform:"uppercase",
-        textShadow: "0 4 20px rgba(0, 0, 0, 0.5)", 
+        textShadow: ` 
+        0 0 10px rgba(255, 255, 255, 0.9),
+        0 0 20px rgba(255, 255, 255, 0.7),
+        0 0 40px rgba(255, 215, 0, 0.6),
+        0 0 80px rgba(255, 215, 0, 0.4)`,
     },
     
     letter: {
@@ -112,25 +116,30 @@ const styles = {
     },
     
     subtitle: {
-      marginTop: "12px", 
+      margin: 0, 
       fontSize: "28px", // Responsive subtitle size
       fontWeight: "700",
       color:"#f5e6b3",
       letterSpacing: "1px",
+      textAlign: "center",
+      lineHeight: "1.4",
+      letterSpacing: "1px",
     },
 
     subtitleWrapper: {
-      display: "flex",
-      textAlign:"center",
+      display: "inline-flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginTop: "16px",
     },
 
     underline:{
       width: "100%",
       height: "4px",
       background: "linear-gradient(90deg, #ffd700, #ffcc00)",
-      marginTop: "2px",
+      marginTop: "8px",
       borderRadius: "2px",
-      boxShadow: "0 0 10px rgba(255, 215, 0, 0.7)",
+      boxShadow: "0 0 10px rgba(255, 215, 0, 0.8)",
     },
 
 }

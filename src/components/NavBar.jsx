@@ -25,6 +25,7 @@ function Navbar() {
               Home
             {activeMenu === "home" && (
                 <ul style={styles.dropdownMenu}>
+                    <li style={styles.dropdownMenuItem}>Announcements</li>
                     <li style={styles.dropdownMenuItem}>About</li>
                     <li style={styles.dropdownMenuItem}>My Achievements</li>
                     <li style={styles.dropdownMenuItem}>Contact</li>

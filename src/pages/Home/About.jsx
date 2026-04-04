@@ -16,7 +16,7 @@ function About() {
         }}
       >
         <p style={styles.text}>
-          Hi, I’m Jonathan Goldfish, a graduated A-Level student who is passionate in Mathematics and Physics, 
+          Hi, I’m Jonathan Goldfish, a graduated A-Level student who is passionate in Mathematics and Physics to pursue my dream of becoming an electrical engineer in the future
           and I'd love sharing knowledge with others as well as giving back to A-Level community.
           I created this platform to provide a dedicated and handwritten lecture notes, exercises, and full solutions 
           to help students excel in their studies.
