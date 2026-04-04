@@ -6,7 +6,15 @@ function About() {
       
       <div style={styles.divider}></div>
       
-      <div style={styles.card}> 
+      <div
+        style={styles.card}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.boxShadow = "0 0 50px rgba(255,215,0,0.7)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.boxShadow = "0 0 25px rgba(255,215,0,0.4)";
+        }}
+      >
         <p style={styles.text}>
           Hi, I’m Jonathan Goldfish, a graduated A-Level student who is passionate in Mathematics and Physics, 
           and I'd love sharing knowledge with others as well as giving back to A-Level community.
@@ -60,7 +68,7 @@ const styles = {
   },
 
   card: {
-    width: "70%",               // 🔥 KEY CHANGE
+    width: "70%",               
     maxWidth: "1000px",
     margin: "30px auto",
     padding: "50px 60px",
@@ -87,7 +95,9 @@ const styles = {
     margin: "15px auto",
     fontSize: "20px",      // bigger text
     lineHeight: "1.9",
-    color: "#f5f5f5",
+    color: "#fff8dc", // ✅ light gold for readability
+    maxWidth: "900px",
+    fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
   }
 }
 
