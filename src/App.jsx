@@ -9,26 +9,35 @@ function App() {
     <div>
       <NavBar />
       <Header />
-      <div style={Styles.blurDivider}>
-        {/* Decorative Blur Divider */}
-        <div style={Styles.transition}></div>
+      <div style={Styles.heroDivider}>
       </div>
       <Announcements />
-       <div style={Styles.blurDivider}>
-        {/* Decorative Blur Divider */}
-        <div style={Styles.transition}></div>
-      </div>
+      <div style={Styles.heroDivider}></div>
       <About />
-      <div style={Styles.blurDivider}>
-        {/* Decorative Blur Divider */}
-        <div style={Styles.transition}></div>
-      </div>
+      <div style={Styles.achievementDivider}></div>
       <Achievements />
     </div>
   );
 }
 
 const Styles = {
+  heroDivider: {
+    height: "240px",
+    marginTop: "-160px",
+    position: "relative",
+    zIndex: 2,
+    pointerEvents: "none",
+    background: "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.15) 85%, transparent 100%)",
+  },
+  achievementDivider: {
+    height: "12px",
+    width: "100%",
+    marginTop: "-6px",
+    position: "relative",
+    zIndex: 2,
+    pointerEvents: "none",
+    backgroundColor: "rgba(212, 175, 55, 0.3)",
+  },
   blurDivider: {
     height: "120px",
     marginTop: "-80px",
