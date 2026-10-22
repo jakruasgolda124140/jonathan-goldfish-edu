@@ -1,6 +1,6 @@
 # Jonathan Goldfish EDU
 
-A React website built with Vite.
+A-Level Education Website dedicated by Jonathan Goldfish 
 
 ## Run locally
 
