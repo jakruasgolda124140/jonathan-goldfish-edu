@@ -10,6 +10,8 @@ the project folder. Make sure Node.js and npm are installed, then run:
 ```sh
 npm install
 npm start
+or
+npm run dev 
 ```
 
 Open the local URL printed in the terminal (usually
